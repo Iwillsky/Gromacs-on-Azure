@@ -9,7 +9,4 @@ Leveraging public cloud platform to build GROMACS system is agile without any CA
 
 This repo provides the guide how to build Gromacs cluster for Molecular Dynamics on Azure cloud with detailed instructions step by step.
     
-![image](https://user-images.githubusercontent.com/45908192/116180419-773ffc80-a74b-11eb-8ced-82f776285028.png)
-
-
 ![image](https://user-images.githubusercontent.com/45908192/116180315-465fc780-a74b-11eb-9e06-4d147d0384f5.png)
