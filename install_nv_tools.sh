@@ -31,18 +31,3 @@ g++ -v
 gfortran -v
 mpicc -v
 cmake --version
-
-#install GROMACS
-sudo mkdir /usr/local/gromacs
-cd /home/azureuser
-wget https://ftp.gromacs.org/gromacs/gromacs-2021.1.tar.gz
-tar xfz gromacs-2021.1.tar.gz
-cd gromacs-2021.1/
-mkdir build
-cd build/
-#with MPI & GPU supported
-cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_C_COMPILER=$PATH_OF_MPICC -DCMAKE_CXX_COMPILER=$PATH_OF_MPICXX -DGMX_MPI=on -DGMX_GPU=CUDA
-make
-sudo make install
-source /usr/local/gromacs/bin/GMXRC
-gmx_mpi --version   	#Will list GROMACS version detailed info
